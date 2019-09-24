@@ -21,12 +21,7 @@ using ejs express express express-ejs-layouts
     * db-migrate
     * db-migrate-mysql
     * mysql-promise
-
-JS/CSS
-Bootswatch : "https://bootswatch.com/4/journal/bootstrap.min.css,
-fontawesome: https://use.fontawesome.com/releases/v5.6.3/css/all.css
-bootstrap 
-
+    
 # For Migration Part
 * using db-migrate to use database migrating in the project
 
