@@ -3,9 +3,6 @@ A simple Node js Project with MySQL for session and Authentication  Using Passpo
 
 A sample project to demonstrate the usage of Passport.js in nodejs for authentication and session-ejs-layouts
 
-also demonstrating ejs layouts fature like express-handlebar
-using ejs express express express-ejs-layouts
-
 * Modules used:
     * passport
     * bcryptjs,
