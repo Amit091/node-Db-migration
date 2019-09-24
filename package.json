@@ -1,0 +1,33 @@
+{
+    "name": "nodejs-passport",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "connect-flash": "^0.1.1",
+        "db-migrate-mysql": "^1.1.10",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "express-ejs-layouts": "^2.5.0",
+        "express-session": "^1.15.6",
+        "mongoose": "^5.7.1",
+        "morgan": "^1.9.1",
+        "mysql": "^2.17.1",
+        "mysql-promise": "^5.0.0",
+        "passport": "^0.4.0",
+        "passport-local": "^1.0.0",
+        "promise-mysql": "^4.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.2"
+    }
+}
