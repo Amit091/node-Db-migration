@@ -1,9 +1,9 @@
 {
     "dev": {
-        "host": "carapidb.civ85ykin3rg.us-1.rds.amazonaws.com",
-        "user": "sa",
-        "password": "mjb5150!",
-        "database": "CarAPI",
+        "host": "localhost",
+        "user": "root",
+        "password": "",
+        "database": "projectx_db",
         "driver": "mysql",
         "multipleStatements": true
     },

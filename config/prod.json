@@ -3,7 +3,7 @@
         "host": "localhost",
         "user": "root",
         "password": "",
-        "database": "projectx_db",
+        "database": "projectx_db_prod",
         "driver": "mysql",
         "multipleStatements": true
     },

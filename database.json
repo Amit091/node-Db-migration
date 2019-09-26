@@ -1,21 +1,26 @@
 {
     "dev": {
+        "host": "localhost",
         "driver": "mysql",
         "user": "root",
         "password": "",
         "database": "projectx_db"
-    },
-
-    "test": {
-        "driver": "sqlite3",
-        "filename": ":memory:"
     },
 
     "prod": {
+        "host": "localhost",
         "driver": "mysql",
         "user": "root",
         "password": "",
-        "database": "projectx_db"
+        "database": "projectx_db_prod"
+    },
+
+    "test": {
+        "host": "localhost",
+        "driver": "mysql",
+        "user": "root",
+        "password": "",
+        "database": "projectx_db_test"
     },
 
     "pg": {
@@ -33,5 +38,6 @@
         "host": "localhost"
     },
 
-    "other": "postgres://uname:pw@server.com/dbname"
+    "other": "postgres://uname:pw@server.com/dbname",
+    "sql-file": true
 }
