@@ -5,12 +5,12 @@ const dbConfig = {
     password: "",
     database: "projectx_db",
     host: "localhost",
-    connectionLimit: 10
+    connectionLimit: 100
 };
 module.exports = async() => {
     try {
         let con = await mysql.createConnection(dbConfig);
-        if (con) console.log('Mysql Connect');
+        if (con) console.log('Mysql Database Connection Established');
         return con;
     } catch (ex) {
         throw ex;

@@ -1,24 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const { ensureAuthenticated, forwardAuthenticated } = require('../middleware/auth');
+const indexController = require('./../controller/indexController');
+const SQlCon = require('./../controller/mySQLInventoryController');
+const { ensureAuthenticated } = require('../middleware/auth');
 
-// router.get('*', (req, res) => {
-//     res.render('Welcome');
-// });
+router.get('/', SQlCon.getIndex);
 
-router.get('/', forwardAuthenticated, (req, res) => {
-    res.render('welcome');
-});
+router.get('/dashboard', ensureAuthenticated, indexController.getDashboard);
 
-router.get('/dashboard', ensureAuthenticated, (req, res) => {
-    console.log('dashboard' + req.user);
-
-    res.render('dashboard', { user: req.user });
-});
-
-router.get('/profile', ensureAuthenticated, (req, res) => {
-    res.render('profile', { user: req.user });
-});
-
+router.get('/profile', ensureAuthenticated, indexController.getProfile);
 
 module.exports = router;
